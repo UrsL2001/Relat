@@ -1,7 +1,7 @@
 <?php
 // Estabelece a conexão com o banco de dados
 $servername = "localhost:3306";
-$username = "id20653528_marcosrelat";
+$username = "marcosrelat";
 $password = "]n=|#)]]4NN+(4Ce";
 $dbname = "id20653528_relatorio";
 $conn = new mysqli($servername, $username, $password, $dbname);
