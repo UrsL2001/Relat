@@ -3,7 +3,7 @@ const savedValue = localStorage.getItem('textareaValue');
 
 // obtém a referência para o textarea
 const textarea = document.querySelector('#a1');
-const c1 = document.querySelector('#b1');
+const b1 = document.querySelector('#b1');
 const c1 = document.querySelector('#c1');
 
 
