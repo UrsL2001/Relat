@@ -1,1 +1,137 @@
-<!DOCTYPE html><html>  <head>  <meta charset="UTF-8">    <title>Relatório</title>  </head>  <body><div id="capa" style="position: relative;background-color: black;height: 115px;color: white;font-size: xxx-large;"><center>Relatório</center></div><center>    <table style="position: relative;    top: 2px;"><tr style="background: darkgray;">   <th>Professores</th><th>Mês<br><textarea id="m1" name="m1" rows="1" cols="10" wrap="soft"></textarea></th><th>Observações<th/></tr><tr><td>    <textarea id="a1" name="a1" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b1" name="b1" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c1" name="c1" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a2" name="a2" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b2" name="b2" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c2" name="c2" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a3" name="a3" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b3" name="b3" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c3" name="c3" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a4" name="a4" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b4" name="b4" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c4" name="c4" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a5" name="a5" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b5" name="b5" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c5" name="c5" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a6" name="a6" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b6" name="b6" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c6" name="c6" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a7" name="a7" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b7" name="b7" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c7" name="c7" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a8" name="a8" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b8" name="b8" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c8" name="c8" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a9" name="a9" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b9" name="b9" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c9" name="c9" rows="2" cols="20" wrap="soft"></textarea></td></tr><tr><td>    <textarea id="a10" name="a10" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="b10" name="b10" rows="2" cols="20" wrap="soft"></textarea></td><td>    <textarea id="c10" name="c10" rows="2" cols="20" wrap="soft"></textarea></td></tr></table>    <button onclick="enviarT()">Enviar</button>    </center>    <script src="script.js"></script>  </body></html>
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>Relatório</title>
+  </head>
+  <body>
+<div id="capa" style="position: relative;background-color: black;height: 115px;color: white;font-size: xxx-large;"><center>Relatório</center></div>
+<center>
+    <table style="position: relative;
+    top: 2px;
+">
+<tr style="background: darkgray;">
+   <th>Professores</th><th>Mês<br><textarea id="m1" name="m1" rows="1" cols="10" wrap="soft"></textarea></th><th>Observações<th/>
+</tr>
+<tr>
+<td>
+    <textarea id="a1" name="a1" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b1" name="b1" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c1" name="c1" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+    <textarea id="a2" name="a2" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b2" name="b2" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c2" name="c2" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a3" name="a3" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b3" name="b3" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c3" name="c3" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a4" name="a4" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b4" name="b4" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c4" name="c4" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a5" name="a5" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b5" name="b5" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c5" name="c5" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a6" name="a6" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b6" name="b6" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c6" name="c6" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a7" name="a7" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b7" name="b7" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c7" name="c7" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a8" name="a8" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b8" name="b8" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c8" name="c8" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+    <textarea id="a9" name="a9" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b9" name="b9" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c9" name="c9" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+    <textarea id="a10" name="a10" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="b10" name="b10" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+<td>
+    <textarea id="c10" name="c10" rows="2" cols="20" wrap="soft"></textarea>
+</td>
+</tr>
+
+
+</table>
+   
+ <button onclick="enviarT()">Enviar</button>
+    </center>
+    <script src="save.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
