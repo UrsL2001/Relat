@@ -13,6 +13,3 @@ textarea.addEventListener('input', () => {
 if (savedValue) {
   textarea.value = savedValue;
 }
-
-
-
