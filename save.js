@@ -3,11 +3,10 @@ const savedValue = localStorage.getItem('textareaValue');
 
 // obtém a referência para o textarea
 const textarea = document.querySelector('#a1');
-const textarea = document.querySelector('#b1');
-const textarea = document.querySelector('#c1');
-const textarea = document.querySelector('#a2');
-const textarea = document.querySelector('#b2');
-const textarea = document.querySelector('#c2');
+const c1 = document.querySelector('#b1');
+const c1 = document.querySelector('#c1');
+
+
 // define um ouvinte de evento que atualiza o valor armazenado sempre que houver uma alteração no textarea
 textarea.addEventListener('input', () => {
   localStorage.setItem('textareaValue', textarea.value);
