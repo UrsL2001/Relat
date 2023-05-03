@@ -1,18 +1,24 @@
-// recupera o valor armazenado do textarea
-const savedValue = localStorage.getItem('textareaValue');
+// Cria uma lista de IDs dos elementos textarea
+const ids = [];
+for (let i = 1; i <= 10; i++) {
+  ids.push(`a${i}`, `b${i}`, `c${i}`);
+}
 
-// obtém a referência para o textarea
-const a1 = document.querySelector('#a1');
-const b1 = document.querySelector('#b1');
-const c1 = document.querySelector('#c1');
-
-
-// define um ouvinte de evento que atualiza o valor armazenado sempre que houver uma alteração no textarea
-textarea.addEventListener('input', () => {
-  localStorage.setItem('textareaValue', textarea.value);
+// Recupera os valores armazenados para cada elemento textarea
+const savedValues = {};
+ids.forEach(id => {
+  savedValues[id] = localStorage.getItem(id);
 });
 
-// define o valor do textarea como o valor armazenado
-if (savedValue) {
-  textarea.value = savedValue;
-}
+// Obtém as referências para cada elemento textarea e define um ouvinte de evento para atualizar o valor armazenado
+ids.forEach(id => {
+  const textarea = document.querySelector(`#${id}`);
+  textarea.addEventListener('input', () => {
+    localStorage.setItem(id, textarea.value);
+  });
+
+  // Define o valor do elemento textarea como o valor armazenado
+  if (savedValues[id]) {
+    textarea.value = savedValues[id];
+  }
+});
