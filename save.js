@@ -1,25 +1,23 @@
 <script>
-    // Adiciona um event listener no evento "beforeunload" do window
-    window.addEventListener("beforeunload", function() {
-        // Cria um cookie com o valor da textarea
-        document.cookie = "a1=" + encodeURIComponent(document.getElementById("a1").value);
-    });
+    // Define um objeto para armazenar os valores das textareas
+    var values = {};
 
-    // Função para recuperar o valor de um cookie
-    function getCookie(name) {
-        var cookieArr = document.cookie.split("; ");
-        for (var i = 0; i < cookieArr.length; i++) {
-            var cookiePair = cookieArr[i].split("=");
-            if (name == cookiePair[0]) {
-                return decodeURIComponent(cookiePair[1]);
-            }
+    // Itera sobre todas as textareas
+    var textareas = document.querySelectorAll("textarea");
+    textareas.forEach(function(textarea) {
+        // Adiciona um event listener no evento "blur" da textarea
+        textarea.addEventListener("blur", function() {
+            // Armazena o valor da textarea no objeto "values"
+            values[textarea.id] = this.value;
+            // Armazena o objeto "values" no localStorage
+            localStorage.setItem("textareaValues", JSON.stringify(values));
+        });
+
+        // Recupera os valores do localStorage e define os valores das textareas
+        var storedValues = JSON.parse(localStorage.getItem("textareaValues"));
+        if (storedValues && storedValues[textarea.id]) {
+            textarea.value = storedValues[textarea.id];
+            values[textarea.id] = storedValues[textarea.id];
         }
-        return null;
-    }
-
-    // Recupera o valor do cookie e define o valor da textarea
-    var a1Value = getCookie("a1");
-    if (a1Value) {
-        document.getElementById("a1").value = a1Value;
-    }
+    });
 </script>
