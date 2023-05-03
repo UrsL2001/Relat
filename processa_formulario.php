@@ -1,9 +1,9 @@
 <?php
 // Estabelece a conexão com o banco de dados
-$servername = "localhost";
-$username = "seu_usuario";
-$password = "sua_senha";
-$dbname = "seu_banco_de_dados";
+$servername = "localhost:3306";
+$username = "id20653528_marcosrelat";
+$password = "]n=|#)]]4NN+(4Ce";
+$dbname = "id20653528_relatorio";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verifica se houve um envio de formulário
